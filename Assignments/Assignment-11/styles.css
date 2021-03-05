@@ -1,0 +1,19 @@
+.title {
+  margin-bottom: 10px;
+  text-align: center;
+  width: 210px;
+  border: solid 2px;
+}
+
+input[type="button"] {
+  width: 100%;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
