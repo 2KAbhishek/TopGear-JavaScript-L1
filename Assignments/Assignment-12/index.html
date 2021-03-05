@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Railway Booking</title>
+  </head>
+  <body align="center">
+    <h1>Railway Booking</h1>
+    <form name="register">
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td>
+            <input
+              type="text"
+              name="name"
+              pattern="[a-zA-Z\s]+"
+              required
+              placeholder="Abhishek Keshri"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Age:</td>
+          <td>
+            <input type="number" name="age" min="3" required placeholder="23" />
+          </td>
+        </tr>
+        <tr>
+          <td>Email ID:</td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="abhishek@example.com"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>City:</td>
+          <td>
+            <input list="venue" placeholder="Kolkata" />
+            <datalist id="venue">
+              <option value="Bangalore"></option>
+              <option value="Rajkot"></option>
+              <option value="Vijag"></option>
+            </datalist>
+          </td>
+        </tr>
+        <tr>
+          <td>Date:</td>
+          <td>
+            <input
+              type="text"
+              name="date"
+              id="date"
+              placeholder="DD/MM/YYYY"
+              pattern="\d{1,2}/\d{1,2}/\d{4}"
+              onkeyup="checkDate();"
+            />
+          </td>
+        </tr>
+        <tr style="height: 12pt">
+          <td></td>
+          <td id="datewarn"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input
+              type="submit"
+              id="submit"
+              name="submit"
+              value="Submit"
+              disabled
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script type="text/javascript" src="valDate.js"></script>
+  </body>
+</html>
