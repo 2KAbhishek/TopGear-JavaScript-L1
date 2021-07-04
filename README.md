@@ -25,11 +25,6 @@
 
 <h2>Short sweet headline with 🎇🎉</h2>
 
-<figure>
-  <img src= "https://raw.githubusercontent.com/2KAbhishek/TopGear-JavaScript-L1/master/images/screenshot.jpg" alt="TopGear-JavaScript-L1 Demo" style="width:100%">
-  <figcaption>TopGear-JavaScript-L1 Screenshot</figcaption>
-</figure>
-
 </div>
 
 ## Inspiration
